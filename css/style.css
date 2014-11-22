@@ -56,11 +56,11 @@ body {
 }
 
 .panel input {
-    width: 190px;
+    width: 180px;
 }
 
 .panel select {
-    width: 150px;
+    width: 120px;
     height: 39px;
 }
 
@@ -80,4 +80,34 @@ body {
     float: right;
 
     width: 59%;
+}
+
+@media screen and (max-width: 940px) {
+    body {
+        background-size: 100%;
+    }
+    .alien {
+        width: 100%;
+        padding-top: 55vw;
+    }
+    .panel {
+        width: 100%;
+    }
+    .panel h2 {
+        font-size: 24px;
+    }
+    .marines, .aliens {
+        float: none;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .panel input {
+        width: 140px;
+    }
+    .panel select {
+        100px;
+    }
 }
