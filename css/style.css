@@ -108,6 +108,6 @@ body {
         width: 140px;
     }
     .panel select {
-        100px;
+        width: 100px;
     }
 }
