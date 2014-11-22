@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+    <meta charset="UTF-8">
+    <title>ALIEN HUNTER</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script type="text/x-mustache-template" id="marineTemplate">
+        <input type="text" class="editMarine" value="{{nick}}"/>
+    </script>
+    <script type="text/x-mustache-template" id="alienTemplate">
+        <input type="text" class="editAlien" value="{{nick}}"/>
+        <select class="editAlienBID">
+            {{#BIDs}}<option value="{{val}}" {{#sel}}selected{{/sel}}>{{msg}}</option>{{/BIDs}}
+        </select>
+    </script>
+    <script type="text/x-mustache-template" id="alienAddTemplate">
+        <select class="BID">
+            <option value="" selected disabled>Beacon ID</option>
+            {{#BIDs}}<option value="{{val}}">{{msg}}</option>{{/BIDs}}
+        </select>
+    </script>
+    <script type="text/x-mustache-template" id="itemTemplate">
+        <input type="text" class="editAlien" value="{{nick}}"/>
+        <select class="editAlienBID">
+            {{#BIDs}}<option value="{{val}}" {{#sel}}selected{{/sel}}>{{val}}</option>{{/BIDs}}
+        </select>
+    </script>
+</head>
+<body>
+<div class="alien">
+    <header class="alien-header">
+        <h1>Alien Hunter</h1>
+    </header>
+    <div class="panel">
+        <h2>Panel mistrza gry</h2>
+        <section class="marines">
+            <h1>Marines</h1>
+            <div class="marinesList"></div>
+            <input class="addMarine" type="text" placeholder="Imię gracza"/>
+        </section>
+        <section class="aliens">
+            <h1>Aliens</h1>
+            <div class="aliensList"></div>
+            <input class="addAlien" type="text" placeholder="Imię gracza"/>
+            <span class="addAlienEl"></span>
+        </section>
+    </div>
+</div>
+<script src="js/libs/jquery.js"></script>
+<script src="js/libs/mustache.js"></script>
+<script src="js/libs/underscore.js"></script>
+<script src="js/libs/backbone.js"></script>
+<script src="js/models/player.js"></script>
+<script src="js/models/item.js"></script>
+<script src="js/collections/players.js"></script>
+<script src="js/collections/items.js"></script>
+<script src="js/views/marine.js"></script>
+<script src="js/views/alien.js"></script>
+<script src="js/views/item.js"></script>
+<script src="js/views/app.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

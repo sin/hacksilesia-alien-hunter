@@ -1,0 +1,83 @@
+body {
+    margin: 0 0 100px;
+    padding: 0;
+
+    color: #fff;
+    background: #000 url('../img/header.jpg') center top no-repeat;
+
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+.alien {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 650px;
+}
+
+.alien-header {
+    display: none;
+}
+
+.panel {
+    position: relative;
+
+    width: 940px;
+}
+
+.panel h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: Roboto, sans-serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.panel h1 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.panel input, .panel select {
+    height: 35px;
+    margin: 8px 4px;
+    padding: 0 15px;
+
+    color: #fff;
+    border: 2px solid #404040;
+    border-radius: 2px;
+    background: #0d0d0d;
+
+    font-family: Roboto, sans-serif;
+    line-height: 25px;
+}
+
+.panel input {
+    width: 190px;
+}
+
+.panel select {
+    width: 150px;
+    height: 39px;
+}
+
+.marines, .aliens {
+    box-sizing: border-box;
+    padding: 20px 20px 150px 80px;
+}
+
+.marines {
+    float: left;
+
+    width: 40%;
+    padding-left: 120px;
+}
+
+.aliens {
+    float: right;
+
+    width: 59%;
+}

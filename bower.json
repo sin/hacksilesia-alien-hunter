@@ -1,0 +1,12 @@
+{
+  "name": "Alien Hunter",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "mustache": "~0.8.1",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2"
+  },
+  "devDependencies": {
+  }
+}
